@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".btn");
+    const div = document.getElementById("div");
     const output = document.getElementById("output");
     const copyBtn = document.getElementById("copy");
     const copM = document.getElementById("copM");
@@ -8,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
+            div.classList.remove("hidden");
+            setTimeout(()=>{
+                div.classList.add("hidden")
+            }, 50000)
             lastClickedHtml = button.outerHTML;
             output.innerText = lastClickedHtml;
         });

@@ -23,6 +23,8 @@
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-semibold: 600;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -514,8 +516,23 @@
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
+  .w-70 {
+    width: calc(var(--spacing) * 70);
+  }
+  .w-\[\%\] {
+    width: %;
+  }
+  .w-\[1\] {
+    width: 1;
+  }
+  .w-\[2\] {
+    width: 2;
+  }
   .w-\[4\] {
     width: 4;
+  }
+  .w-\[10\%\] {
+    width: 10%;
   }
   .w-\[60\%\] {
     width: 60%;
@@ -531,6 +548,36 @@
   }
   .w-\[75\%\] {
     width: 75%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
+  }
+  .w-\[100\] {
+    width: 100;
+  }
+  .w-\[101\%\] {
+    width: 101%;
+  }
+  .w-\[102\%\] {
+    width: 102%;
+  }
+  .w-\[103\%\] {
+    width: 103%;
+  }
+  .w-\[105\%\] {
+    width: 105%;
+  }
+  .w-\[120\%\] {
+    width: 120%;
+  }
+  .w-\[150\%\] {
+    width: 150%;
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -930,6 +977,15 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
+  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
@@ -1029,6 +1085,12 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -2050,6 +2112,12 @@
       height: 300%;
     }
   }
+  .before\:h-\[400\%\] {
+    &::before {
+      content: var(--tw-content);
+      height: 400%;
+    }
+  }
   .before\:h-full {
     &::before {
       content: var(--tw-content);
@@ -2241,6 +2309,26 @@
         &::before {
           content: var(--tw-content);
           width: 105%;
+        }
+      }
+    }
+  }
+  .hover\:before\:w-\[200\%\] {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          width: 200%;
+        }
+      }
+    }
+  }
+  .hover\:before\:w-\[205\%\] {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          width: 205%;
         }
       }
     }

@@ -35,14 +35,12 @@
                     hover:before:left-0 hover:after:right-0">
                     Hover me
                 </button>
-                <button class="btn relative min-lg:py-3 py-2 min-lg:px-12 px-4 rounded-full cursor-pointer text-teal-400 hover:text-black transition-colors duration-1000 z-20 border border-teal-400 text-base font-semibold overflow-hidden
-                    before:content-[''] before:absolute before:bg-teal-400 before:h-full before:w-full 
-                    before:top-0 before:left-[-100%] before:-z-10 before:transition-all before:duration-700 before:ease
-                    after:content-[''] after:absolute after:bg-teal-400 after:h-full after:w-full 
-                    after:top-0 after:right-[-100%] after:-z-10 after:transition-all after:duration-700 after:ease
-                    hover:before:left-0 hover:after:right-0">
+                <button class="btn relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full text-teal-400 border border-teal-400 overflow-hidden transition-colors duration-700 z-20 hover:text-black
+                    before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-2 before:h-2 before:rounded-full before:scale-0 before:bg-teal-400 before:-z-1 before:transition-transform before:duration-700 before:ease-in-out
+                    hover:before:scale-100 hover:before:w-[200px] hover:before:h-[200px]">
                     Hover me
                 </button>
+
             </div>
             
             <div class="mt-10 border-[1px] rounded-3xl hidden relative py-2 px-5 justify-items-end text-white text-base" id="div">
@@ -51,18 +49,27 @@
                 <p id="copM" class="text-green-400 text-sm mt-2 hidden">Copied !</p>
             </div>
         </div>
-        <div class="mt-10 justify-items-center">
+        <div class="mt-10 w-[70%] justify-items-center">
             <div>
                 <h1 class="text-white font-bold text-3xl ">Flashy Animation</h1>
             </div>
             <div class="mt-6">
-                <button class="relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full bg-teal-400 text-black overflow-hidden border-2 transition ease duration-700 hover:text-teal-400 hover:bg-transparent
-                    hover:shadow-[0px_0px_25px] shadow-teal-400 
-                ">
+                <button class=" btn group relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full bg-teal-400 text-black border-2 transition ease duration-700 hover:text-teal-400 hover:bg-transparent
+                    hover:shadow-[0px_0px_25px] shadow-teal-400 ">
+                    <img src="img/star.svg" alt="star" class="absolute h-8 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-16">
+                    <img src="img/star.svg" alt="star" class="absolute h-6 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-16 group-hover:-translate-y-16">
+                    <img src="img/star.svg" alt="star" class="absolute h-7 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-10">
+                    <img src="img/star.svg" alt="star" class="absolute h-4 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-5">
+                    <img src="img/star.svg" alt="star" class="absolute h-12 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:-translate-y-14">
+                    <img src="img/star.svg" alt="star" class="absolute h-11 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-20 group-hover:translate-y-5">
+                    <img src="img/star.svg" alt="star" class="absolute h-10 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-20 group-hover:-translate-y-5">
+                    
+                    <!-- Remember to download the star img/icon -->
+                    
                     Hover me
                 </button>
             </div>
-            <div class="mt-10 border-[1px] rounded-3xl hidden relative py-2 px-5 justify-items-end text-white text-base" id="div1">
+            <div class="mt-10 border-[1px] rounded-3xl  hidden relative py-2 px-5 justify-items-end text-white text-base" id="div1">
                 <h1 id="output1" class="mt-2"></h1>
                 <img src="img/copy.svg" class="h-6 mt-7 cursor-pointer" alt="copy" id="copy1">   
                 <p id="copM1" class="text-green-400 text-sm mt-2 hidden">Copied !</p>

@@ -2139,6 +2139,12 @@
       display: block;
     }
   }
+  .before\:h-0 {
+    &::before {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 0);
+    }
+  }
   .before\:h-2 {
     &::before {
       content: var(--tw-content);
@@ -2149,6 +2155,12 @@
     &::before {
       content: var(--tw-content);
       height: 190px;
+    }
+  }
+  .before\:h-\[300\%\] {
+    &::before {
+      content: var(--tw-content);
+      height: 300%;
     }
   }
   .before\:h-\[400\%\] {
@@ -2179,6 +2191,12 @@
     &::before {
       content: var(--tw-content);
       width: 250px;
+    }
+  }
+  .before\:w-\[300\%\] {
+    &::before {
+      content: var(--tw-content);
+      width: 300%;
     }
   }
   .before\:w-full {
@@ -2226,6 +2244,18 @@
     &::before {
       content: var(--tw-content);
       background-color: var(--color-teal-400);
+    }
+  }
+  .before\:bg-\[radial-gradient\(circle\,_\#38b2ac\,_\#234e52_40\%\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: radial-gradient(circle, #38b2ac, #234e52 40%);
+    }
+  }
+  .before\:opacity-100 {
+    &::before {
+      content: var(--tw-content);
+      opacity: 100%;
     }
   }
   .before\:transition-all {
@@ -2388,12 +2418,52 @@
       }
     }
   }
+  .hover\:before\:h-0 {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          height: calc(var(--spacing) * 0);
+        }
+      }
+    }
+  }
   .hover\:before\:h-\[200px\] {
     &:hover {
       @media (hover: hover) {
         &::before {
           content: var(--tw-content);
           height: 200px;
+        }
+      }
+    }
+  }
+  .hover\:before\:h-\[300\%\] {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          height: 300%;
+        }
+      }
+    }
+  }
+  .hover\:before\:h-\[300px\] {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          height: 300px;
+        }
+      }
+    }
+  }
+  .hover\:before\:w-0 {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          width: calc(var(--spacing) * 0);
         }
       }
     }
@@ -2418,6 +2488,26 @@
       }
     }
   }
+  .hover\:before\:w-\[300\%\] {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          width: 300%;
+        }
+      }
+    }
+  }
+  .hover\:before\:w-\[300px\] {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          width: 300px;
+        }
+      }
+    }
+  }
   .hover\:before\:scale-100 {
     &:hover {
       @media (hover: hover) {
@@ -2427,6 +2517,26 @@
           --tw-scale-y: 100%;
           --tw-scale-z: 100%;
           scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
+    }
+  }
+  .hover\:before\:opacity-0 {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          opacity: 0%;
+        }
+      }
+    }
+  }
+  .hover\:before\:opacity-100 {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          opacity: 100%;
         }
       }
     }

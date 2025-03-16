@@ -67,10 +67,17 @@
                     
                     Hover me
                 </button>
-                <button class="relative py-2 min-lg:py-3 px-4 min-lg:px-16 text-base font-semibold cursor-pointer rounded-full bg-teal-400 text-black border-2 transition ease duration-700 hover:text-teal-400 hover:bg-transparent">
-                    <img src="" alt="">
+                <button class="btn group relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full text-teal-400 border border-teal-400 overflow-hidden transition-colors duration-700 z-20 
+                    before:absolute before:bottom-[-100%] before:left-0 before:w-full before:h-full before:bg-teal-400 before:bg-[url('./img/down.svg')] before:bg-no-repeat before:bg-center before:bg-[length:25px_25px] before:-z-1 before:transition-all before:duration-700 before:ease-in-out
+                    hover:before:bottom-0
+                    after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:content-[''] after:transition-all after:duration-700 after:ease-in-out hover:after:-translate-y-2">
+                    <!-- Remember to download the Download img/icon-->
+                    <span class="relative block transition-all duration-700 ease-in-out group-hover:-translate-y-10">Download</span>
+                </button>
+                <button class="btn group relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full text-teal-400 border border-teal-400 overflow-hidden transition-colors duration-700 z-20">
                     Send
                 </button>
+
             </div>
             <div class="mt-10 border-[1px] rounded-3xl  hidden relative py-2 px-5 justify-items-end text-white text-base" id="div1">
                 <h1 id="output1" class="mt-2"></h1>

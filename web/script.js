@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // for the preloader
+    setTimeout(function () {
+        document.getElementById("preloader").classList.add("opacity-0");
+        setTimeout(function () {
+            document.getElementById("preloader").classList.add("hidden");
+        }, 700); // Wait for fade-out animation to complete
+    }, 4000);
+
     const buttons = document.querySelectorAll(".btn");
     
     // For the first section

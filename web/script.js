@@ -4,12 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("preloader").classList.add("opacity-0");
         setTimeout(function () {
             document.getElementById("preloader").classList.add("hidden");
-        }, 700); // Wait for fade-out animation to complete
+        }, 700);
     }, 4000);
 
     const buttons = document.querySelectorAll(".btn");
     
     // For the first section
+    const section1 = document.getElementById("section");
     const div1 = document.getElementById("div");
     const output1 = document.getElementById("output");
     const copyBtn1 = document.getElementById("copy");
@@ -26,8 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            const parentSection = button.closest(".grid") ? div1 : div2;
-            const outputElement = parentSection === div1 ? output1 : output2;
+            const parentSection = button.closest("#section1") ? div2 : div1;
 
             parentSection.classList.remove("hidden");
             setTimeout(() => {

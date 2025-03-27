@@ -2208,10 +2208,10 @@
       width: calc(var(--spacing) * 0);
     }
   }
-  .before\:w-\[250px\] {
+  .before\:w-\[1000px\] {
     &::before {
       content: var(--tw-content);
-      width: 250px;
+      width: 1000px;
     }
   }
   .before\:w-full {
@@ -2487,22 +2487,32 @@
       }
     }
   }
-  .hover\:before\:w-\[200\%\] {
-    &:hover {
-      @media (hover: hover) {
-        &::before {
-          content: var(--tw-content);
-          width: 200%;
-        }
-      }
-    }
-  }
   .hover\:before\:w-\[300px\] {
     &:hover {
       @media (hover: hover) {
         &::before {
           content: var(--tw-content);
           width: 300px;
+        }
+      }
+    }
+  }
+  .hover\:before\:w-\[1000px\] {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          width: 1000px;
+        }
+      }
+    }
+  }
+  .hover\:before\:w-full {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          content: var(--tw-content);
+          width: 100%;
         }
       }
     }

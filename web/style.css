@@ -2289,16 +2289,52 @@
       background-color: var(--color-teal-400);
     }
   }
+  .before\:bg-\[url\(\'\.\/img\/En\.svg\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: url('./img/En.svg');
+    }
+  }
+  .before\:bg-\[url\(\'\.\/img\/Envelope\.svg\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: url('./img/Envelope.svg');
+    }
+  }
+  .before\:bg-\[url\(\'\.\/img\/EnvelopeOpen\.svg\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: url('./img/EnvelopeOpen.svg');
+    }
+  }
   .before\:bg-\[url\(\'\.\/img\/down\.svg\'\)\] {
     &::before {
       content: var(--tw-content);
       background-image: url('./img/down.svg');
     }
   }
+  .before\:bg-\[length\:20px_25px\] {
+    &::before {
+      content: var(--tw-content);
+      background-size: 20px 25px;
+    }
+  }
   .before\:bg-\[length\:25px_25px\] {
     &::before {
       content: var(--tw-content);
       background-size: 25px 25px;
+    }
+  }
+  .before\:bg-\[length\:30px_25px\] {
+    &::before {
+      content: var(--tw-content);
+      background-size: 30px 25px;
+    }
+  }
+  .before\:bg-\[length\:30px_30px\] {
+    &::before {
+      content: var(--tw-content);
+      background-size: 30px 30px;
     }
   }
   .before\:bg-center {

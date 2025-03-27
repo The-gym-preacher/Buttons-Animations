@@ -7,6 +7,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-amber-200: oklch(0.924 0.12 95.746);
+    --color-amber-400: oklch(0.828 0.189 84.429);
     --color-green-400: oklch(0.792 0.209 151.711);
     --color-green-500: oklch(0.723 0.219 149.579);
     --color-teal-400: oklch(0.777 0.152 181.912);
@@ -251,8 +253,20 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .left-\[10\%\] {
+    left: 10%;
+  }
+  .left-\[10\] {
+    left: 10;
   }
   .isolate {
     isolation: isolate;
@@ -1300,6 +1314,9 @@
   .bg-origin-padding {
     background-origin: padding-box;
   }
+  .fill-amber-400 {
+    fill: var(--color-amber-400);
+  }
   .fill-none {
     fill: none;
   }
@@ -1518,6 +1535,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-amber-200 {
+    color: var(--color-amber-200);
   }
   .text-black {
     color: var(--color-black);
@@ -2088,6 +2108,23 @@
       }
     }
   }
+  .group-active\:-translate-x-16 {
+    &:is(:where(.group):active *) {
+      --tw-translate-x: calc(var(--spacing) * -16);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .group-active\:-translate-y-16 {
+    &:is(:where(.group):active *) {
+      --tw-translate-y: calc(var(--spacing) * -16);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .group-active\:opacity-100 {
+    &:is(:where(.group):active *) {
+      opacity: 100%;
+    }
+  }
   .before\:absolute {
     &::before {
       content: var(--tw-content);
@@ -2483,16 +2520,6 @@
         &::before {
           content: var(--tw-content);
           height: 300px;
-        }
-      }
-    }
-  }
-  .hover\:before\:w-\[300px\] {
-    &:hover {
-      @media (hover: hover) {
-        &::before {
-          content: var(--tw-content);
-          width: 300px;
         }
       }
     }

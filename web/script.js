@@ -6,8 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("preloader").classList.add("hidden");
         }, 700);
     }, 4000);
-
+    
     const buttons = document.querySelectorAll(".btn");
+
     
     // For the first section
     const section1 = document.getElementById("section");
@@ -66,4 +67,5 @@ document.addEventListener("DOMContentLoaded", () => {
             }).catch(err => console.error("Failed to copy:", err));
         }
     });
+
 });

@@ -1458,6 +1458,21 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .pr-1 {
+    padding-right: calc(var(--spacing) * 1);
+  }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
+  .pr-9 {
+    padding-right: calc(var(--spacing) * 9);
+  }
+  .pr-12 {
+    padding-right: calc(var(--spacing) * 12);
+  }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
   }

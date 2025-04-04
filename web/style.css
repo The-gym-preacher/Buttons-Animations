@@ -2367,10 +2367,34 @@
       background-color: var(--color-teal-400);
     }
   }
+  .before\:bg-\[url\(\'\.\/img\/down-white\.svg\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: url('./img/down-white.svg');
+    }
+  }
   .before\:bg-\[url\(\'\.\/img\/down\.svg\'\)\] {
     &::before {
       content: var(--tw-content);
       background-image: url('./img/down.svg');
+    }
+  }
+  .before\:bg-\[url\(\\\'\.\/img\/down-\.svg\\\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: url(\'./img/down-.svg\');
+    }
+  }
+  .before\:bg-\[url\(\\\'\.\/img\/down-white\.svg\\\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: url(\'./img/down-white.svg\');
+    }
+  }
+  .before\:bg-\[url\(\\\'\.\/img\/down\.svg\\\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: url(\'./img/down.svg\');
     }
   }
   .before\:bg-\[length\:25px_25px\] {

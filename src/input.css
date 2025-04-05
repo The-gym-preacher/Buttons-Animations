@@ -1,3 +1,50 @@
 @import "tailwindcss";
   
-  
+.text-indigo-600 {
+    color: var(--color-indigo-600) /* oklch(0.511 0.262 276.966) = #4f39f6 */;
+}
+.hover\:text-white {
+    &:hover {
+        @media (hover: hover) {
+            color: var(--color-white) /* #fff = #ffffff */;
+        }
+    }
+}
+.border-indigo-600 {
+    border-color: var(--color-indigo-600) /* oklch(0.511 0.262 276.966) = #4f39f6 */;
+}
+.before\:bg-indigo-600 {
+    &::before {
+        content: var(--tw-content);
+        background-color: var(--color-indigo-600) /* oklch(0.511 0.262 276.966) = #4f39f6 */;
+    }
+}
+.after\:bg-indigo-600 {
+    &::after {
+        content: var(--tw-content);
+        background-color: var(--color-indigo-600) /* oklch(0.511 0.262 276.966) = #4f39f6 */;
+    }
+}
+.before\:bg-\[url\(\'\.\/img\/down-white\.svg\'\)\] {
+    &::before {
+        content: var(--tw-content);
+        background-image: url('./img/down-white.svg');
+    }
+}
+.hover\:text-indigo-600 {
+    &:hover {
+        @media (hover: hover) {
+            color: var(--color-indigo-600) /* oklch(0.511 0.262 276.966) = #4f39f6 */;
+        }
+    }
+}
+.bg-indigo-600 {
+    background-color: var(--color-indigo-600) /* oklch(0.511 0.262 276.966) = #4f39f6 */;
+}
+.hover\:bg-transparent {
+    &:hover {
+        @media (hover: hover) {
+            background-color: transparent;
+        }
+    }
+}

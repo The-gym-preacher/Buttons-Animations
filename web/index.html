@@ -46,7 +46,10 @@
             document.getElementById('down').classList.replace('before:bg-[url(\'./img/down.svg\')]', 'before:bg-[url(\'./img/down-white.svg\')]');
             document.getElementById('close').src= 'img/EnvelopeClose-white.svg';
             document.getElementById('open').src= 'img/EnvelopeOpen-white.svg';
-            document.getElementById('star').src= 'img/star-white.svg';
+            document.querySelectorAll('.star').forEach(star => {
+                star.src = 'img/star-white.svg';
+            });
+
             document.getElementById('send').src= 'img/Send-white.svg';
         ">
 
@@ -84,7 +87,10 @@
             document.getElementById('down').classList.replace('before:bg-[url(\'./img/down-white.svg\')]', 'before:bg-[url(\'./img/down.svg\')]');
             document.getElementById('close').src= 'img/EnvelopeClose.svg';
             document.getElementById('open').src= 'img/EnvelopeOpen.svg';
-            document.getElementById('star').src= 'img/star.svg';
+            document.querySelectorAll('.star').forEach(star => {
+                star.src = 'img/star.svg';
+            });
+
             document.getElementById('send').src= 'img/Send.svg';
             "
         >
@@ -142,13 +148,13 @@
             <div class="grid grid-cols-4 w-full mt-6 min-lg:gap-12 gap-6">
                 <button class=" btn group text-center relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full bg-teal-400 text-black hover:border-1 border-teal-400 transition-all ease duration-700 hover:text-teal-400 hover:bg-transparent
                     hover:shadow-[0px_0px_25px] shadow-teal-400 ">
-                    <img src="img/star.svg" alt="star" id="star" class="absolute h-8 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-16">
-                    <img src="img/star.svg" alt="star" id="star" class="absolute h-6 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-16 group-hover:-translate-y-16">
-                    <img src="img/star.svg" alt="star" id="star" class="absolute h-7 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-10">
-                    <img src="img/star.svg" alt="star" id="star" class="absolute h-4 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-5">
-                    <img src="img/star.svg" alt="star" id="star" class="absolute h-12 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:-translate-y-14">
-                    <img src="img/star.svg" alt="star" id="star" class="absolute h-11 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-20 group-hover:translate-y-5">
-                    <img src="img/star.svg" alt="star" id="star" class="absolute h-10 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-20 group-hover:-translate-y-5">
+                    <img src="img/star.svg" alt="star"  class="star absolute h-8 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-16">
+                    <img src="img/star.svg" alt="star"  class="star absolute h-6 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-16 group-hover:-translate-y-16">
+                    <img src="img/star.svg" alt="star"  class="star absolute h-7 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-10">
+                    <img src="img/star.svg" alt="star"  class="star absolute h-4 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-5">
+                    <img src="img/star.svg" alt="star"  class="star absolute h-12 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:-translate-y-14">
+                    <img src="img/star.svg" alt="star"  class="star absolute h-11 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-20 group-hover:translate-y-5">
+                    <img src="img/star.svg" alt="star"  class="star absolute h-10 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-20 group-hover:-translate-y-5">
                     
                     <!-- Remember to download the star img/icon -->
                     

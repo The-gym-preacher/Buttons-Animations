@@ -286,8 +286,14 @@
   .right-3 {
     right: calc(var(--spacing) * 3);
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .bottom-\[-100\%\] {
     bottom: -100%;
+  }
+  .bottom-\[-100\] {
+    bottom: -100;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -759,6 +765,14 @@
   }
   .translate-x-\[-100\%\] {
     --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-\[-150\%\] {
+    --tw-translate-x: -150%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-\[-190\%\] {
+    --tw-translate-x: -190%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-x-\[1000\%\] {
@@ -2180,13 +2194,25 @@
   .transition-normal {
     transition-behavior: normal;
   }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .duration-400 {
+    --tw-duration: 400ms;
+    transition-duration: 400ms;
+  }
   .duration-700 {
     --tw-duration: 700ms;
     transition-duration: 700ms;
+  }
+  .duration-800 {
+    --tw-duration: 800ms;
+    transition-duration: 800ms;
   }
   .duration-1000 {
     --tw-duration: 1000ms;

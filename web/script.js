@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(function () {
             document.getElementById("preloader").classList.add("hidden");
         }, 700);
-    }, 4000);
+    }, 2500);
     
     const buttons = document.querySelectorAll(".btn");
 

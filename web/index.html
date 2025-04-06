@@ -7,6 +7,7 @@
     <title>Button Animation | Preacher</title>
     <link rel="shortcut icon" href="img/logo2.svg" type="image/x-icon">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -43,14 +44,11 @@
             });
             document.getElementById('copy').src= 'img/copy-black.svg';
             document.getElementById('copy1').src= 'img/copy-black.svg';
-            document.getElementById('down').classList.replace('before:bg-[url(\'./img/down.svg\')]', 'before:bg-[url(\'./img/down-white.svg\')]');
             document.getElementById('close').src= 'img/EnvelopeClose-white.svg';
             document.getElementById('open').src= 'img/EnvelopeOpen-white.svg';
-            document.querySelectorAll('.star').forEach(star => {
-                star.src = 'img/star-white.svg';
-            });
-
-            document.getElementById('send').src= 'img/Send-white.svg';
+            document.querySelectorAll('.bi-stars').forEach(el =>
+                el.classList.replace('drop-shadow-[0_0_8px_white]', 'drop-shadow-[0_0_8px_blue]')
+            );
         ">
 
         <img id="moon" src="img/moon-white.svg" alt="moon" class="h-6 rounded-full p-1 bg-gray-700 shadow-[0px_0px_10px] shadow-black"
@@ -84,14 +82,11 @@
             document.getElementById('div1').classList.add('text-white');
             document.getElementById('copy').src= 'img/copy.svg';
             document.getElementById('copy1').src= 'img/copy.svg';
-            document.getElementById('down').classList.replace('before:bg-[url(\'./img/down-white.svg\')]', 'before:bg-[url(\'./img/down.svg\')]');
             document.getElementById('close').src= 'img/EnvelopeClose.svg';
             document.getElementById('open').src= 'img/EnvelopeOpen.svg';
-            document.querySelectorAll('.star').forEach(star => {
-                star.src = 'img/star.svg';
-            });
-
-            document.getElementById('send').src= 'img/Send.svg';
+            document.querySelectorAll('.bi-stars').forEach(el =>
+                el.classList.replace('drop-shadow-[0_0_8px_blue]', 'drop-shadow-[0_0_8px_white]')
+            );
             "
         >
     </button>
@@ -146,31 +141,33 @@
                 <h1 class="text-white font-bold text-3xl ">Flashy Animation</h1>
             </div>
             <div class="grid grid-cols-4 w-full mt-6 min-lg:gap-12 gap-6">
-                <button class=" btn group text-center relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full bg-teal-400 text-black hover:border-1 border-teal-400 transition-all ease duration-700 hover:text-teal-400 hover:bg-transparent
-                    hover:shadow-[0px_0px_25px] shadow-teal-400 ">
-                    <img src="img/star.svg" alt="star"  class="star absolute h-8 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-16">
-                    <img src="img/star.svg" alt="star"  class="star absolute h-6 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-16 group-hover:-translate-y-16">
-                    <img src="img/star.svg" alt="star"  class="star absolute h-7 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-10">
-                    <img src="img/star.svg" alt="star"  class="star absolute h-4 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-5">
-                    <img src="img/star.svg" alt="star"  class="star absolute h-12 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:-translate-y-14">
-                    <img src="img/star.svg" alt="star"  class="star absolute h-11 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-20 group-hover:translate-y-5">
-                    <img src="img/star.svg" alt="star"  class="star absolute h-10 opacity-0 transition-all duration-700 ease-out filter drop-shadow-[0px_0px_8px_white] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-20 group-hover:-translate-y-5">
-                    
-                    <!-- Remember to download the star img/icon -->
-                    
+                <button class="btn group text-center relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full bg-teal-400 text-black hover:border-1 border-teal-400 transition-all ease duration-700 hover:text-teal-400 hover:bg-transparent hover:shadow-[0px_0px_25px] shadow-teal-400">
+                    <i class="bi bi-stars absolute text-white text-xl opacity-0 transition-all duration-700 ease-out drop-shadow-[0_0_8px_white] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-10"></i>
+                    <i class="bi bi-stars absolute text-white text-lg opacity-0 transition-all duration-700 ease-out drop-shadow-[0_0_8px_white] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:-translate-x-16 group-hover:-translate-y-5"></i>
+                    <i class="bi bi-stars absolute text-white text-3xl opacity-0 transition-all duration-700 ease-out drop-shadow-[0_0_8px_white] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-12 group-hover:-translate-y-14"></i>
+                    <i class="bi bi-stars absolute text-white text-2xl opacity-0 transition-all duration-700 ease-out drop-shadow-[0_0_8px_white] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-x-20 group-hover:translate-y-5"></i>
                     Hover me
                 </button>
-                <button id="down" class="btn group relative text-center py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full text-teal-400 border border-teal-400 overflow-hidden transition-colors duration-700 z-20 
-                    before:absolute before:bottom-[-100%] before:left-0 before:w-full before:h-full before:bg-teal-400 before:bg-[url('./img/down.svg')] before:bg-no-repeat before:bg-center before:bg-[length:25px_25px] before:-z-1 before:transition-all before:duration-700 before:ease-in-out
-                    hover:before:bottom-0"
+                
+                <button id="down"
+                    class="btn group relative text-center py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full text-teal-400 border border-teal-400 overflow-hidden transition-colors duration-700 z-20"
                     onclick="
-                    this.classList.add('before:bottom-0', 'top-0');
-                    this.classList.remove('hover:before:bottom-0');
-                    document.getElementById('download').classList.remove('group-hover:-translate-y-10');
-                    document.getElementById('download').innerText = 'Downloaded';"
-                    >
-                    <!-- Remember to download the Download img/icon-->
-                    <span id="download" class=" block transition-all duration-700 ease-in-out group-hover:-translate-y-10">Download</span>
+                        this.classList.add('top-0');
+                        document.getElementById('download').classList.remove('group-hover:-translate-y-10');
+                        document.getElementById('download').innerText = 'Downloaded';
+                        document.getElementById('ic').classList.remove('group-hover:bottom-0');
+                    ">
+                
+                    <!-- Animated background with Bootstrap Icon -->
+                    <div id="ic" class="absolute bottom-[-100%] left-0 w-full h-full bg-teal-400 flex items-center justify-center text-black text-xl transition-all duration-700 ease-in-out group-hover:bottom-0 pointer-events-none z-0">
+                        <i class="bi bi-download"></i>
+                    </div>
+                
+                    <!-- Text content -->
+                    <span id="download"
+                        class="relative z-10 block transition-all duration-700 ease-in-out group-hover:-translate-y-10">
+                        Download
+                    </span>
                 </button>
                 <button id="send-btn" class="btn group relative py-2 min-lg:py-3 px-4 min-lg:px-12 text-base font-semibold cursor-pointer rounded-full text-teal-400 border border-teal-400 overflow-hidden transition-colors duration-700 z-20
                     before:absolute before:bottom-[-100%] before:left-0 before:w-full before:h-full before:bg-teal-400 before:bg-no-repeat before:-z-1 before:transition-all before:duration-800 before:ease-in-out

@@ -42,10 +42,6 @@
                     }
                 });
             });
-            document.getElementById('copy').src= 'img/copy-black.svg';
-            document.getElementById('copy1').src= 'img/copy-black.svg';
-            document.getElementById('close').src= 'img/EnvelopeClose-white.svg';
-            document.getElementById('open').src= 'img/EnvelopeOpen-white.svg';
             document.querySelectorAll('.bi-stars').forEach(el =>
                 el.classList.replace('drop-shadow-[0_0_8px_white]', 'drop-shadow-[0_0_8px_blue]')
             );
@@ -80,10 +76,6 @@
             });
             document.getElementById('div').classList.add('text-white');
             document.getElementById('div1').classList.add('text-white');
-            document.getElementById('copy').src= 'img/copy.svg';
-            document.getElementById('copy1').src= 'img/copy.svg';
-            document.getElementById('close').src= 'img/EnvelopeClose.svg';
-            document.getElementById('open').src= 'img/EnvelopeOpen.svg';
             document.querySelectorAll('.bi-stars').forEach(el =>
                 el.classList.replace('drop-shadow-[0_0_8px_blue]', 'drop-shadow-[0_0_8px_white]')
             );
@@ -132,8 +124,8 @@
             
             <div class="mt-10 border-[1px] rounded-3xl hidden relative py-2 px-5 justify-items-end text-white text-base" id="div">
                 <h1 id="output" class="mt-2"></h1>
-                <img src="img/copy.svg" class="h-6 mt-7 cursor-pointer" alt="copy" id="copy">   
-                <p id="copM" class="text-green-400 text-sm mt-2 hidden">Copied !</p>
+                <i id="copy" class="bi bi-clipboard2-minus text-2xl text-white"></i>  
+                <p id="copM" class="text-green-700 text-sm mt-2 hidden">Copied !</p>
             </div>
         </div>
         <div class="mt-10 w-[70%] justify-items-center" id="section1">
@@ -201,8 +193,8 @@
             </div>
             <div class="mt-10 border-[1px] rounded-3xl hidden relative py-2 px-5 justify-items-end text-white text-base" id="div1">
                 <h1 id="output1" class="mt-2"></h1>
-                <img src="img/copy.svg" class="h-6 mt-7 cursor-pointer" alt="copy" id="copy1">   
-                <p id="copM1" class="text-green-500 text-sm mt-2 hidden">Copied !</p>
+                <i id="copy1" class="bi bi-clipboard2-minus text-2xl text-white"></i>  
+                <p id="copM1" class="text-green-700 text-sm mt-2 hidden">Copied !</p>
             </div>
         </div>
     </section>

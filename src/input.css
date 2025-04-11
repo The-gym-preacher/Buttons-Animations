@@ -41,6 +41,9 @@
 .bg-indigo-600 {
     background-color: var(--color-indigo-600) /* oklch(0.511 0.262 276.966) = #4f39f6 */;
 }
+.bg-\[\#212121\] {
+    background-color: #212121;
+}
 .hover\:bg-transparent {
     &:hover {
         @media (hover: hover) {

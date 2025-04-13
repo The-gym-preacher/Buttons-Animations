@@ -45,6 +45,7 @@
             document.querySelectorAll('.bi-stars').forEach(el =>
                 el.classList.replace('drop-shadow-[0_0_8px_white]', 'drop-shadow-[0_0_8px_blue]')
             );
+            document.getElementById('search').classList.replace('bg-black','bg-white');
         ">
 
         <img id="moon" src="img/moon-white.svg" alt="moon" class="h-6 rounded-full p-1 bg-gray-700 shadow-[0px_0px_10px] shadow-black"
@@ -79,6 +80,7 @@
             document.querySelectorAll('.bi-stars').forEach(el =>
                 el.classList.replace('drop-shadow-[0_0_8px_blue]', 'drop-shadow-[0_0_8px_white]')
             );
+            document.getElementById('search').classList.replace('bg-white','bg-black');
             "
         >
     </button>
@@ -92,6 +94,12 @@
     </div>
     <section class="min-h-screen content-center pb-12 justify-items-center">
         <div class="w-[70%] justify-items-center" id="section">
+            <div class="btn grid grid-cols-4 w-full mt-6 min-lg:gap-12 gap-6">
+                <div id="search" class="relative group w-[50px] h-[50px] transition-all duration-1000 ease-in-out bg-black border-2 border-teal-400 rounded-full hover:w-[300px] cursor-pointer">
+                    <input type="search" placeholder="Search here ..." class="absolute top-0 left-0 w-full h-[42.5px] rounded-full px-5 text-base outline-none border-none placeholder:text-white hidden group-hover:block"/>
+                    <i class="bi bi-search absolute top-0.5 right-0.5 w-[42.5px] h-[42.5px] p-2.5 rounded-full text-teal-400 text-[1.2em] text-center leading-[1.5rem] transition-all duration-1000 ease-in-out group-hover:bg-teal-400 group-hover:text-white"></i>
+                </div>
+            </div>
             <div>
                 <h1 class="text-white font-bold text-4xl ">Animation</h1>
             </div>

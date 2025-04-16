@@ -51,3 +51,17 @@
         }
     }
 }
+.group-hover\:text-white {
+    &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+            color: var(--color-white) /* #fff = #ffffff */;
+        }
+    }
+}
+.group-hover\:bg-indigo-600 {
+    &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+            background-color: var(--color-indigo-600) /* oklch(0.511 0.262 276.966) = #4f39f6 */;
+        }
+    }
+}

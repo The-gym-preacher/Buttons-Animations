@@ -1343,9 +1343,6 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
@@ -1375,9 +1372,6 @@
   }
   .bg-teal-400 {
     background-color: var(--color-teal-400);
-  }
-  .bg-white {
-    background-color: var(--color-white);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -2398,6 +2392,13 @@
       }
     }
   }
+  .group-hover\:text-black {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
   .group-hover\:text-white {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -2868,6 +2869,20 @@
   &:hover {
     @media (hover: hover) {
       background-color: transparent;
+    }
+  }
+}
+.group-hover\:text-white {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      color: var(--color-white);
+    }
+  }
+}
+.group-hover\:bg-indigo-600 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      background-color: var(--color-indigo-600);
     }
   }
 }
